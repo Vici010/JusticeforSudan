@@ -1,0 +1,49 @@
+.result-container {
+  background-color: #f6eee5;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 120px;
+  font-family: "Georgia", serif;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 56px;
+  margin-bottom: 40px;
+}
+
+p {
+  width: 520px;
+  margin: 0 auto 60px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
+.donate-btn {
+  display: inline-block;
+  padding: 20px 60px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+
+.home-btn {
+  display: inline-block;
+  padding: 20px 60px;
+  background-color: black;
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-left: 12px;   
+}
+

@@ -1,0 +1,33 @@
+<div class="quiz-container">
+
+  <h2>{{ questions[currentQuestionIndex].text }}</h2>
+
+  <div class="options-wrapper">
+    <div class="options">
+      <button
+        class="option"
+        *ngFor="let option of questions[currentQuestionIndex].options; let i = index"
+        (click)="!showAnswer && selectAnswer(i)"
+        [ngClass]="{
+          selected: selectedAnswerIndex === i && !showAnswer,
+          correct: showAnswer && i === questions[currentQuestionIndex].correctAnswer,
+          wrong:
+            showAnswer &&
+            selectedAnswerIndex === i &&
+            i !== questions[currentQuestionIndex].correctAnswer
+        }"
+      >
+        {{ option }}
+      </button>
+    </div>
+
+    <button
+      class="btn btn-dark next-btn"
+      (click)="submitAnswer()"
+      [disabled]="selectedAnswerIndex === null"
+    >
+      {{ showAnswer ? 'Next' : 'Check Answer' }}
+    </button>
+  </div>
+
+</div>

@@ -1,0 +1,39 @@
+/* Make wrapper full screen and use flex to center content */
+.homepage-wrapper {
+  height: 100vh;                /* full viewport height */
+  display: flex;
+  justify-content: center;       /* horizontal center */
+  align-items: center;           /* vertical center */
+  background-color: #eee3d8;
+}
+
+/* Center content inside container */
+.container {
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
